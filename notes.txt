@@ -1,0 +1,29 @@
+1. Keras Sequential and Functional
+There are 2 ways to build Keras model: sequential and functional
+- The Sequential allows you to create models layer-by-layer for most problems. It is limited in that 
+it does not allow you to create models that share layers or have multiple inputs or outputs.
+- The Functional allows you to create models that have more flexibility as you can define models where 
+layers connect to more than just the previous and next layers. You can connect layers to any other layer.
+
+2. Softmax Activation Function
+- The Softmax function is used as the activation function in the output layer of neural networks models that 
+predicts a multinomial probability distribution
+=> Softmax is used as the activation function for multi-class classification problems where class membership
+is required on more than 2 class labels.
+
+
+3. Optimizer Adam (another optimization algorithm beside Gradient Descent)
+- Adam optimization is a stochastic gradient descent method that is based on adaptive estimation of first-order
+and second-order moments
+
+
+4. Loss Function: categorical_crossentropy
+- Computes the crossentropy loss between the labels and predictions. This loss functions is used when 
+there are 2 or more labels classes. (Expect labels to be provided in a one-hot representation)
+- One-hot representation: the integer encoded variable is removed and a new binary variable is added for each 
+unique integer value. (As like in one vs all lecture of Machine Learning. Encode binary variables for integer numbers
+from 1 to 10)
+
+
+5. Metrics: Accuracy
+- Calculates how often predictions equal labels
